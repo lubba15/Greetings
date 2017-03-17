@@ -1,0 +1,39 @@
+
+body {
+background-image: url('http://dreamicus.com/data/image/image-06.jpg');
+background-origin: content-box;
+}
+h1 {
+  padding-left: 35%;
+}
+.radioButton{
+  padding-left: 30%;
+}
+.greet {
+  padding-left: 30%;
+}
+.name {
+  padding-left: 30%;
+}
+#greetMe{
+  padding-right: 50%;
+}
+.reset{
+  padding-left: 30%;
+}
+.greetingCounter{
+  padding-right: 100%;;
+}
+#counting {
+    padding-right: 100%;
+}
+.count{
+  padding-left: 30%;
+}
+#myButton{
+  padding-left:70%
+}
+#frameB{
+border: 15px none pink;
+  
+}
