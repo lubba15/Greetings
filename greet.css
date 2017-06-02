@@ -4,16 +4,19 @@ background-image: url('http://dreamicus.com/data/image/image-06.jpg');
 background-origin: content-box;
 }
 h1 {
-  padding-left: 35%;
+  padding-left: 27%;
+  font-size: 87px;
 }
 .radioButton{
   padding-left: 30%;
+  font-size: 28px;
 }
 .greet {
-  padding-left: 30%;
+  padding-left: 35%;
 }
 .name {
-  padding-left: 30%;
+  padding-left: 33%;
+  font-size: 20px;
 }
 #greetMe{
   padding-right: 50%;
@@ -24,16 +27,13 @@ h1 {
 .greetingCounter{
   padding-right: 100%;;
 }
-#counting {
-    padding-right: 100%;
-}
 .count{
-  padding-left: 30%;
+  padding-left:38%;
+  font-size: 18px;
 }
 #myButton{
   padding-left:70%
 }
 #frameB{
 border: 15px none pink;
-  
 }

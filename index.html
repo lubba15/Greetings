@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
   <link rel="stylesheet" type="text/css" href="greet.css">
-    <title></title>
-  </head>
-  <body>
-<div id='frameB'>
-   <h1>Greetings!</h1>
-     <div class="name"><label for = "name">Name</label>
-    <input type="text" id="name" placeholder="type name"></div>
+  <title>Greetings</title>
+</head>
 
-     <br>
-   </br>
+<body>
+  <div id='frameB'>
+    <h1>Greetings!</h1>
+    <div class="name">
+      <label for="">Name</label>
+      <input type="text" id="greetNames" placeholder="type name">
+    </div>
+    <br>
     <div class="radioButton">
-    <input type="radio" name="Langauge" id="Zulu" value="Zulu">Zulu
-    <input type="radio" name="Langauge" id="English" value="English">English
-    <input type="radio" name="Langauge" id="French" value="French">French
-  </div>
-  <br>
+      <input type="radio" name="Langauge" id="Zulu" value="Zulu">Zulu
+      <input type="radio" name="Langauge" id="English" value="English">English
+      <input type="radio" name="Langauge" id="French" value="French">French
+    </div>
+    <br>
+    <div class="greet">
+      <button type="button" onclick="greetings()" id="myGreetButton">Greet Me</button>
+      <button id='myResetButton' onclick='resetCount()'>Reset</button>
+    </div>
+    <div class="count">
+      <p id='greetMe'></p>
+      <h2 id='ClearCounter'></h2>
+      <p id='counting'></p>
+      <label for="count"></label>
+    </div>
+      <p id='myB'></p>
+    <script src="test.js"></script>
+    <script src="Dom.test.js"></script>
+    <script src="greet.js"></script>
+</body>
 
-<div class="greet"><button type="button" onclick="greetings()" id="btn">Greet Me</button></div>
-<br>
-
-  <div class="count"><label for = "count"></label>
-    <h2 id='Clear Counter'></h2>
-  <p id='counting'></p>
-<div id='greetMe'></div>
-<div id='myB'></div>
-<button id='reset' onclick='resetCount()'>Reset</button>
-
-<script src = "greet.js"></script>
-  </body>
 </html>

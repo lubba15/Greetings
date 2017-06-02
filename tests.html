@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js" charset="utf-8"></script>
+</head>
+<h1>Greetings!</h1>
+<div class="name">
+  <label for="">Name</label>
+  <input type="text" class="greetNames" placeholder="type name">
+</div>
+<br>
+<div class="radioButton">
+  <input type="radio" name="Langauge" value="English" class = "Langauge">English
+  <input type="radio" name="Langauge" value="Zulu" class = "Langauge">Zulu
+  <input type="radio" name="Langauge" value="French" class = "Langauge">French
+</div>
+<br>
+<div class="greet">
+  <button type="button" onclick="greetings()" id="myGreetButton">Greet Me</button>
+  <button id='myResetButton' onclick='resetCount()'>Reset</button>
+</div>
+<div class ="message">
+</div>
+<body>
+  <div id="mocha"></div>
+  <script>
+    // the mocha test style to use - we use BDD - Behviour Driven Development
+    mocha.setup('bdd');
+    //ensure the assert function is available
+    var assert = chai.assert;
+  </script>
+  <!-- <script src="greetings.js" charset="utf-8"></script> -->
+  <script src="Dom.test.js" charset="utf-8"></script>
+  <script src="test.js" charset="utf-8"></script>
+
+  <!-- <script src="greet.js" charset="utf-8"></script> -->
+  <script src="test/greet.test.js" charset="utf-8"></script>
+  <!-- <script src="test/checkLanguage.test.js" charset="utf-8"></script> -->
+  <script>
+    <!-- configure and run mocha -->
+    mocha.checkLeaks();
+    mocha.run();
+  </script>
+
+</body>
+
+</html>
